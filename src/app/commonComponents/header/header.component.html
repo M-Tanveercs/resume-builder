@@ -12,11 +12,14 @@
         <div>
           <ul>
             <li>FREE AI RESUME BUILDER</li>
-            <li id="resumewrite">
+            <li id="resumewrite" (mouseover)="showResumeWriting()" (mouseleave)="handleMouseLeave()">
               RESUME WRITING <i class="fa-solid fa-chevron-down"></i>
               
+
             </li>
-            <li>RESUME EXAMPLES <i class="fa-solid fa-chevron-down"></i></li>
+            <li class="">RESUME EXAMPLES <i class="fa-solid fa-chevron-down"></i>
+            
+            </li>
             <li>BLOGS <i class="fa-solid fa-chevron-down"></i></li>
           </ul>
         </div>
@@ -26,7 +29,10 @@
       </div>
     </div>
   </div>
-  <div class="resume-writing-container">
+
+  <div  class="resume-writing-container" *ngIf="isResumeWritingVisible"  
+  (mouseover)="keepResumeWriting()" 
+  (mouseleave)="handleMouseLeave()">
     <div class="resume-writing-row">
       <div class="left-col">
         <div class="left-container">
@@ -89,4 +95,5 @@
       </div>
     </div>
   </div>
+
 </header>
