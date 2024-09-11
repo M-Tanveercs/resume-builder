@@ -17,8 +17,8 @@
               
 
             </li>
-            <li class="">RESUME EXAMPLES <i class="fa-solid fa-chevron-down"></i>
-            
+            <li class=""  (mouseover)="showResumeWritings()" (mouseleave)="handleMouseLeaves()">RESUME EXAMPLES <i class="fa-solid fa-chevron-down"></i>
+             
             </li>
             <li>BLOGS <i class="fa-solid fa-chevron-down"></i></li>
           </ul>
@@ -30,6 +30,7 @@
     </div>
   </div>
 
+  
   <div  class="resume-writing-container" *ngIf="isResumeWritingVisible"  
   (mouseover)="keepResumeWriting()" 
   (mouseleave)="handleMouseLeave()">
@@ -95,5 +96,76 @@
       </div>
     </div>
   </div>
+  <div  class="resume-writing-container" *ngIf="isResumeWritingVisibles"  
+  (mouseover)="keepResumeWritings()" 
+  (mouseleave)="handleMouseLeaves()">
+    <div class="resume-writing-row">
+      <div class="left-col">
+        <div class="left-container">
+          <div class="top-text">
+            <h3>Resume examples for 217 jobs</h3>
+            <div class="top-inner-text">
+              <img src="../../../assets/images/editor-160x154.webp" alt="" />
+              <p>
+                Writing the perfect resume with our help just got easier. Check our resume guides for the job you desire.
 
+              </p>
+            </div>
+          </div>
+          <div class="bottom-text">
+            <div class="row">
+              <div class="col1">
+                <h3>Most Popular Resume Examples</h3>
+               <ul>
+                <li><a href="">Data Analyst resume</a></li>
+                <li><a href="">Graphic Designer resume</a></li>
+                <li><a href="#">Esthetician resume
+</a></li>
+                <li><a href="#">Computer Science resume</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+               </ul>
+              </div>
+              <div class="col2">
+               
+                <p id="p1">
+                  Simple Resume Templates Modern resume templates Professional
+                  resume templates High school student resume templates
+                </p>
+                <p id="p2">
+                  Google Docs resume templates Microsoft Word resume templates
+                </p>
+                <a href="#"
+                  >See all resume templates<i
+                    class="fa-solid fa-chevron-right"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <i class="fa-solid fa-caret-up icon"></i>
+        <img
+          src="../../../assets/images/stockholm_resume_resumegiants-1040x1456.webp"
+          width="300px"
+          height="300px"
+          alt=""
+        />
+        <div class="right-col-text">
+          <h4>Create and edit your resume online</h4>
+          <p>
+            Generate compelling resumes with our user-friendly tool and secure
+            employment quickly.
+          </p>
+          <button type="button">CREATE MY RESUME</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
+
+
+<h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur repellat eum explicabo necessitatibus ex totam amet quas! Laborum, est assumenda earum, in minima nam alias obcaecati minus aperiam harum quidem!</h1>

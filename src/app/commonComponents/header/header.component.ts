@@ -26,5 +26,22 @@ export class HeaderComponent {
         this.isResumeWritingVisible = false;
       }
     }, 100);
+  }isResumeWritingVisibles = false;
+
+  showResumeWritings() {
+    this.isResumeWritingVisibles = true;
+  }
+
+  keepResumeWritings() {
+    this.isResumeWritingVisibles = true;
+  }
+
+  handleMouseLeaves() {
+    // Delay hiding to allow user to move the cursor to the content
+    setTimeout(() => {
+      if (!document.querySelector('.resume-writing-container:hover') && !document.querySelector('#resumewrite:hover')) {
+        this.isResumeWritingVisibles = false;
+      }
+    }, 100);
   }
 }

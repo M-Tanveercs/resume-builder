@@ -10,7 +10,7 @@
   border: none;
 }
 .header-container {
-
+position: relative;
   width: 100%;
   height: 80px;
   background: linear-gradient(124deg, #030b22 28%, #0a2672 66%);
@@ -64,8 +64,9 @@
 }
 
 .resume-writing-container {
-    
- 
+  background-color: white;
+    position: absolute;
+ z-index: 50;
   width: 100%;
   height: 90vh;
   
@@ -148,6 +149,13 @@
         position: absolute;
         top: -13px;
         left: 15px;
+        font-size: x-large;
+        color: #a5b1d3;
+      }
+      .icon{
+        position: absolute;
+        top: -13px;
+        left: 230px;
         font-size: x-large;
         color: #a5b1d3;
       }
