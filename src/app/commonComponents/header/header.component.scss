@@ -96,7 +96,11 @@ position: relative;
           }
         }
       }
+      .resume-example{
+        margin-top: 40px;
+      }
       .bottom-text {
+        
         .row {
           margin-top: 3rem;
           width: 100%;
@@ -117,9 +121,23 @@ position: relative;
               letter-spacing: 2px;
               text-align: left;
             }
+            ul{
+             
+              li{
+              
+              list-style: none;
+              a{
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.854);
+                line-height: 35px;
+                letter-spacing: 2px;
+              }
+              }
+            }
           }
           .col2 {
-            a {
+           span{ a {
+         
               text-decoration: none;
               letter-spacing: 1.5px;
               color: rgba(0, 0, 0, 0.854);
@@ -131,6 +149,12 @@ position: relative;
             }
             a:hover {
               text-decoration: underline;
+            }
+          }
+            
+            ul{
+             
+              margin-bottom: 20px;
             }
           }
         }
@@ -182,3 +206,4 @@ position: relative;
     }
   }
 }
+

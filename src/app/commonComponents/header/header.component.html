@@ -12,13 +12,19 @@
         <div>
           <ul>
             <li>FREE AI RESUME BUILDER</li>
-            <li id="resumewrite" (mouseover)="showResumeWriting()" (mouseleave)="handleMouseLeave()">
+            <li
+              id="resumewrite"
+              (mouseover)="showResumeWriting()"
+              (mouseleave)="handleMouseLeave()"
+            >
               RESUME WRITING <i class="fa-solid fa-chevron-down"></i>
-              
-
             </li>
-            <li class=""  (mouseover)="showResumeWritings()" (mouseleave)="handleMouseLeaves()">RESUME EXAMPLES <i class="fa-solid fa-chevron-down"></i>
-             
+            <li
+              class=""
+              (mouseover)="showResumeWritings()"
+              (mouseleave)="handleMouseLeaves()"
+            >
+              RESUME EXAMPLES <i class="fa-solid fa-chevron-down"></i>
             </li>
             <li>BLOGS <i class="fa-solid fa-chevron-down"></i></li>
           </ul>
@@ -30,10 +36,12 @@
     </div>
   </div>
 
-  
-  <div  class="resume-writing-container" *ngIf="isResumeWritingVisible"  
-  (mouseover)="keepResumeWriting()" 
-  (mouseleave)="handleMouseLeave()">
+  <div
+    class="resume-writing-container"
+    *ngIf="isResumeWritingVisible"
+    (mouseover)="keepResumeWriting()"
+    (mouseleave)="handleMouseLeave()"
+  >
     <div class="resume-writing-row">
       <div class="left-col">
         <div class="left-container">
@@ -67,11 +75,12 @@
                 <p id="p2">
                   Google Docs resume templates Microsoft Word resume templates
                 </p>
-                <a href="#"
-                  >See all resume templates<i
-                    class="fa-solid fa-chevron-right"
-                  ></i
-                ></a>
+                <span>
+                  <a href="#"
+                    >See all resume templates<i
+                      class="fa-solid fa-chevron-right"
+                    ></i></a
+                ></span>
               </div>
             </div>
           </div>
@@ -96,9 +105,12 @@
       </div>
     </div>
   </div>
-  <div  class="resume-writing-container" *ngIf="isResumeWritingVisibles"  
-  (mouseover)="keepResumeWritings()" 
-  (mouseleave)="handleMouseLeaves()">
+  <div
+    class="resume-writing-container"
+    *ngIf="isResumeWritingVisibles"
+    (mouseover)="keepResumeWritings()"
+    (mouseleave)="handleMouseLeaves()"
+  >
     <div class="resume-writing-row">
       <div class="left-col">
         <div class="left-container">
@@ -107,40 +119,51 @@
             <div class="top-inner-text">
               <img src="../../../assets/images/editor-160x154.webp" alt="" />
               <p>
-                Writing the perfect resume with our help just got easier. Check our resume guides for the job you desire.
-
+                Writing the perfect resume with our help just got easier. Check
+                our resume guides for the job you desire.
               </p>
             </div>
           </div>
-          <div class="bottom-text">
+          <div class="bottom-text resume-example">
+            <h3 id="bottom-text-heading">Most Popular Resume Examples</h3>
             <div class="row">
+              
               <div class="col1">
-                <h3>Most Popular Resume Examples</h3>
-               <ul>
-                <li><a href="">Data Analyst resume</a></li>
-                <li><a href="">Graphic Designer resume</a></li>
-                <li><a href="#">Esthetician resume
-</a></li>
-                <li><a href="#">Computer Science resume</a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-               </ul>
+                
+                <ul>
+                  <li>
+                    <img
+                      src="../../../assets/images/data-analyst-24x24.webp"
+                      alt=""
+                    /><a href="">Data Analyst resume</a>
+                  </li>
+                  <li>
+                    <img src="../../../assets/images/Audiovisales-24x24.webp" alt="" /><a href=""
+                      >Graphic Designer resume</a
+                    >
+                  </li>
+                  <li><img src="../../../assets/images/Servicios-personal-24x24.webp" alt=""><a href="#">Esthetician resume </a></li>
+                  <li><img src="../../../assets/images/computer-science-24x24.webp" alt=""><a href="#">Computer Science resume</a></li>
+                  <li><img src="../../../assets/images/acting-24x24.webp" alt=""><a href="#">Acting resume</a></li>
+                  <li><img src="../../../assets/images/business-analyst-24x24.webp" alt=""><a href="#">Business Analyst resume</a></li>
+                  <li><img src="../../../assets/images/data-entry-clerk-24x24.webp" alt=""><a href="#">Data Entry Clerk resume</a></li>
+                </ul>
               </div>
               <div class="col2">
-               
-                <p id="p1">
-                  Simple Resume Templates Modern resume templates Professional
-                  resume templates High school student resume templates
-                </p>
-                <p id="p2">
-                  Google Docs resume templates Microsoft Word resume templates
-                </p>
-                <a href="#"
-                  >See all resume templates<i
-                    class="fa-solid fa-chevron-right"
-                  ></i
-                ></a>
+                <ul>
+                  <li><img src="../../../assets/images/scrum-1-24x24.webp" alt=""><a href="#">Scrum Master resume</a></li>
+                  <li><img src="../../../assets/images/barista-24x24.webp" alt=""><a href="#">Barista resume</a></li>
+                  <li><img src="../../../assets/images/executive-24x24.webp" alt=""><a href="#">Executive Assistant resume</a></li>
+                  <li><img src="../../../assets/images/dentist-24x24.webp" alt=""><a href="#">Dental Assistant resume</a></li>
+                  <li><img src="../../../assets/images/nurse-24x24.webp" alt=""><a href="#">Nurse resume</a></li>
+                  <li><img src="../../../assets/images/developer-24x24.webp" alt=""><a href="#">Software Developer resume</a></li>
+                </ul>
+                <span>
+                  <a href="#"
+                    >See all resume templates<i
+                      class="fa-solid fa-chevron-right"
+                    ></i></a
+                ></span>
               </div>
             </div>
           </div>
@@ -167,5 +190,8 @@
   </div>
 </header>
 
-
-<h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur repellat eum explicabo necessitatibus ex totam amet quas! Laborum, est assumenda earum, in minima nam alias obcaecati minus aperiam harum quidem!</h1>
+<h1>
+  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur repellat
+  eum explicabo necessitatibus ex totam amet quas! Laborum, est assumenda earum,
+  in minima nam alias obcaecati minus aperiam harum quidem!
+</h1>
