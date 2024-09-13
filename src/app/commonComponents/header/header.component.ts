@@ -10,38 +10,45 @@ import { Component, TemplateRef, ViewChild } from '@angular/core';
 })
 export class HeaderComponent {
   isResumeWritingVisible = false;
-
-  showResumeWriting() {
-    this.isResumeWritingVisible = true;
+  isBlogVisible:boolean=false
+  isResumeexampleVisibles = false;
+  showResumeWriting(text:any) {
+    if(text=='Resumeexample'){
+      this.isResumeexampleVisibles = true
+    }else if(text=='ResumeWriting'){
+      this.isResumeWritingVisible = true;
+    }
+   
   }
 
-  keepResumeWriting() {
-    this.isResumeWritingVisible = true;
-  }
+  
 
-  handleMouseLeave() {
+  handleMouseLeave(text:any) {
     // Delay hiding to allow user to move the cursor to the content
+    if(text=='Resumeexample'){
+      setTimeout(() => {
+        if (!document.querySelector('.resume-writing-container:hover') && !document.querySelector('#resumewrite:hover')) {
+          this.isResumeexampleVisibles = false;
+        }
+      }, 100);
+    }else if(text=='ResumeWriting')
     setTimeout(() => {
       if (!document.querySelector('.resume-writing-container:hover') && !document.querySelector('#resumewrite:hover')) {
         this.isResumeWritingVisible = false;
       }
     }, 100);
-  }isResumeWritingVisibles = false;
-
-  showResumeWritings() {
-    this.isResumeWritingVisibles = true;
   }
 
-  keepResumeWritings() {
-    this.isResumeWritingVisibles = true;
+ 
+
+  keepResumeexample(text:any) {
+  if (text='Resumeexample') {
+    this.isResumeexampleVisibles = true;
+  }else if(text=='ResumeWriting'){
+    this.isResumeWritingVisible = true;
+  }
+   
   }
 
-  handleMouseLeaves() {
-    // Delay hiding to allow user to move the cursor to the content
-    setTimeout(() => {
-      if (!document.querySelector('.resume-writing-container:hover') && !document.querySelector('#resumewrite:hover')) {
-        this.isResumeWritingVisibles = false;
-      }
-    }, 100);
-  }
+  
 }
