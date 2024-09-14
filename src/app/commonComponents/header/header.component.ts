@@ -17,6 +17,8 @@ export class HeaderComponent {
       this.isResumeexampleVisibles = true
     }else if(text=='ResumeWriting'){
       this.isResumeWritingVisible = true;
+    }else{
+      this.isBlogVisible=true
     }
    
   }
@@ -27,25 +29,35 @@ export class HeaderComponent {
     // Delay hiding to allow user to move the cursor to the content
     if(text=='Resumeexample'){
       setTimeout(() => {
-        if (!document.querySelector('.resume-writing-container:hover') && !document.querySelector('#resumewrite:hover')) {
+        if (!document.querySelector('.resume-example-container:hover') && !document.querySelector('#resumeexample:hover')) {
           this.isResumeexampleVisibles = false;
         }
       }, 100);
-    }else if(text=='ResumeWriting')
+  
+    }else if(text=='ResumeWriting'){
     setTimeout(() => {
       if (!document.querySelector('.resume-writing-container:hover') && !document.querySelector('#resumewrite:hover')) {
         this.isResumeWritingVisible = false;
       }
     }, 100);
+    }else{
+      setTimeout(() => {
+        if (!document.querySelector('.blog-container:hover') && !document.querySelector('#blog:hover')) {
+          this.isBlogVisible = false;
+        }
+      }, 100);
+    }
   }
 
  
 
   keepResumeexample(text:any) {
-  if (text='Resumeexample') {
+  if (text=='Resumeexample') {
     this.isResumeexampleVisibles = true;
   }else if(text=='ResumeWriting'){
     this.isResumeWritingVisible = true;
+  }else{
+    this.isBlogVisible=true
   }
    
   }

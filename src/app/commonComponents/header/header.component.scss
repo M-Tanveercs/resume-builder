@@ -62,15 +62,22 @@ position: relative;
     }
   }
 }
-
-.resume-writing-container,.resume-example-container {
+.resume-writing-container{
+  height: 90vh
+}
+.resume-example-container{
+  height: 85vh;
+}.blog-container{
+  height: 75vh;
+}
+.resume-writing-container,.resume-example-container,.blog-container {
   background-color: white;
     position: absolute;
  z-index: 50;
   width: 100%;
-  height: 90vh;
+ 
   
-  .resume-writing-row,.resume-example-row,.blog-container {
+  .resume-writing-row,.resume-example-row,.blog-row {
     font-family: Open Sans, sans-serif;
     display: flex;
     width: 100%;
@@ -187,6 +194,13 @@ position: relative;
         position: absolute;
         top: -13px;
         left: 230px;
+        font-size: x-large;
+        color: #a5b1d3;
+      }
+      .icon1{
+        position: absolute;
+        top: -13px;
+        left: 400px;
         font-size: x-large;
         color: #a5b1d3;
       }
