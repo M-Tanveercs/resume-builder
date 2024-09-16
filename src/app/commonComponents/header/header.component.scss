@@ -119,6 +119,11 @@ position: relative;
           display: flex;
           justify-content: space-between;
           padding-right: 10px;
+          .col1{
+            .feature-article{
+              margin-top: 1rem;
+            }
+          }
           .col1,
           .col2 {
             width: 45%;
