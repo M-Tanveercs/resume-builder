@@ -32,37 +32,75 @@
 //     0% { transform: rotate(-360deg); }
 //     100% { transform: rotate(0deg); }
 // }
-.image-rotate {
-    position: relative;
-    width: 300px;  /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
-    overflow: hidden;
-}
+// .image-rotate {
+//     position: relative;
+//     width: 300px;  /* Adjust size as needed */
+//     height: 300px; /* Adjust size as needed */
+//     overflow: hidden;
+// }
 
-.image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+// .image {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     transition: transform 1s ease-in-out;
+// }
+
+// .first {
+//     animation: rotateOut 2s linear infinite;
+// }
+
+// .second {
+//     animation: rotateIn 2s linear infinite;
+//     animation-delay: 1s; /* Start second image after the first has started rotating */
+// }
+
+// @keyframes rotateOut {
+//     0% { transform: rotateY(0deg); }
+//     100% { transform: rotateY(360deg); }
+// }
+
+// @keyframes rotateIn {
+//     0% { transform: rotateY(-360deg); }
+//     100% { transform: rotateY(0deg); }
+// }
+
+.container{
+    width: 100vw;
+    height: 75vh;
+    background: linear-gradient(124deg, #030b22 28%, #0a2672 66%);
+    color: white;
+}
+.banner-row{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   .col1{
+   
+    width: 50%;
     height: 100%;
-    transition: transform 1s ease-in-out;
-}
-
-.first {
-    animation: rotateOut 2s linear infinite;
-}
-
-.second {
-    animation: rotateIn 2s linear infinite;
-    animation-delay: 1s; /* Start second image after the first has started rotating */
-}
-
-@keyframes rotateOut {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
-}
-
-@keyframes rotateIn {
-    0% { transform: rotateY(-360deg); }
-    100% { transform: rotateY(0deg); }
+    padding: 20px 0px 0px 90px;
+    h1{
+        font-size:3.2rem;
+    }
+   }
+   .col2{
+    
+    width: 30%;
+    height: 100%;
+   }
+   .banner-list{
+    ul{
+        margin-top: 20px;
+    padding-left: 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    } 
+    li{
+       
+    }
+   }
 }
