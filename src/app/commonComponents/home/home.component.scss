@@ -105,8 +105,9 @@
         display: flex;
         gap: 20px;
         button {
-          width: 350px;
+          width: 330px;
           height: 48px;
+          font-weight: bolder;
         //   padding: 12px 32px;
           @extend %buttonStyle;
         }
@@ -119,6 +120,10 @@
         }
       }
       
+   }
+   .banner-review{
+    width: 100%;
+    margin-top: 30px;
    }
    .col2{
     width: 30%;
